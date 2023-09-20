@@ -4,7 +4,7 @@ class Computer:
 
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
-    def __init__(self, description, processor_type, hard_drive_capacity, memory, operating_system, year_made, price):
+    def __init__(self, description: str, processor_type: str, hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: int):
         # Storing information about a specific computer
         self.description = description
         self.processor_type = processor_type
@@ -15,9 +15,9 @@ class Computer:
         self.price = price
 
     # Updating a computer's price
-    def update_price(self, new_price):
+    def update_price(self, new_price: int):
         self.price = new_price
 
     # Updating a computer's OS
-    def update_os(self, new_os):
+    def update_os(self, new_os: str):
         self.operating_system = new_os
