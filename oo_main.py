@@ -12,7 +12,9 @@ def main():
     shop = ResaleShop(inventory)
     
     # Make a computer
-    computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
+    computer = Computer("Mac Pro (Late 2013)", 
+                        "3.5 GHc 6-Core Intel Xeon E5", 
+                        1024, 64, "macOS Big Sur", 2013, 1500)
 
     # Print a little banner
     print("-" * 21)
