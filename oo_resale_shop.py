@@ -3,13 +3,11 @@ from computer import Computer
 
 class ResaleShop:
 
-    # Global attribute
-    itemID = 0
-
     # Local attributes
     def __init__(self, inventory: Dict[int, Dict[str, Union[str, int, bool]]]): 
         # Storing store's inventory
         self.inventory = inventory
+        self.itemID = 0
 
     # Buying a computer (add to inventory)
     def buy(self, computer):
